@@ -1,0 +1,15 @@
+/* 
+  Localizable.strings
+  SimpleWeather
+
+  Created by Neutral Magnet on 2/23/21.
+  
+*/
+
+"alert.ok" = "OK";
+"alert.error" = "Something Went Wrong";
+"alert.error.description" = "Please try again later.";
+"callToAction.save" = "Save";
+"callToAction.delete" = "Delete";
+"list.section.header.suggestedCities" = "Suggested Cities";
+"list.section.header.savedCities" = "Saved Cities";

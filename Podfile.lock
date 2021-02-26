@@ -1,0 +1,35 @@
+PODS:
+  - Apollo (0.41.0):
+    - Apollo/Core (= 0.41.0)
+  - Apollo/Core (0.41.0)
+  - Apollo/SQLite (0.41.0):
+    - Apollo/Core
+    - SQLite.swift (~> 0.12.2)
+  - R.swift (5.3.1):
+    - R.swift.Library (~> 5.3.0)
+  - R.swift.Library (5.3.0)
+  - SQLite.swift (0.12.2):
+    - SQLite.swift/standard (= 0.12.2)
+  - SQLite.swift/standard (0.12.2)
+
+DEPENDENCIES:
+  - Apollo
+  - Apollo/SQLite
+  - R.swift
+
+SPEC REPOS:
+  trunk:
+    - Apollo
+    - R.swift
+    - R.swift.Library
+    - SQLite.swift
+
+SPEC CHECKSUMS:
+  Apollo: abe51edae238da17570535e370ffe1bec276275b
+  R.swift: 56ec7e3aef34b9eee47a659e42462db2c1cc5ac3
+  R.swift.Library: 0fc583cb55a99e28901299cc451614cad1161962
+  SQLite.swift: d2b4642190917051ce6bd1d49aab565fe794eea3
+
+PODFILE CHECKSUM: 3bff24cae1899e137d88577359ba2e30a9b9ba63
+
+COCOAPODS: 1.10.1
