@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Formatter {
+extension Formatter {
     static func unit() -> MeasurementFormatter {
         let formatter = MeasurementFormatter()
         formatter.unitStyle = .medium

@@ -9,7 +9,18 @@
 "alert.ok" = "OK";
 "alert.error" = "Something Went Wrong";
 "alert.error.description" = "Please try again later.";
-"callToAction.save" = "Save";
-"callToAction.delete" = "Delete";
+
+"list.title" = "Simple Weather";
 "list.section.header.suggestedCities" = "Suggested Cities";
 "list.section.header.savedCities" = "Saved Cities";
+
+"detail.title" = "Forecast";
+"detail.callToAction.save" = "Save";
+"detail.callToAction.delete" = "Delete";
+
+"detail.temperature" = "Temperature";
+"detail.feelsLike" = "Feels like";
+"detail.visibility" = "Visibility";
+"detail.humidity" = "Humidity";
+"detail.speed" = "Wind Speed";
+"detail.deg" = "Deg";

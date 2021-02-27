@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lBD-6Z-chi">
     <device id="retina4_7" orientation="portrait" appearance="dark"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -111,7 +112,7 @@
             </objects>
             <point key="canvasLocation" x="2476.811594202899" y="-293.30357142857139"/>
         </scene>
-        <!--Observation-->
+        <!--Forecast-->
         <scene sceneID="MYo-jn-osi">
             <objects>
                 <tableViewController id="a57-nd-jdE" customClass="DetailViewController" customModule="SimpleWeather" customModuleProvider="target" sceneMemberID="viewController">
@@ -143,14 +144,14 @@
                                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="wSX-3d-9c5" userLabel="Header Stack">
                                                                     <rect key="frame" x="0.0" y="0.0" width="305" height="50"/>
                                                                     <subviews>
-                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SUY-Zk-5Ex" userLabel="Title Label">
-                                                                            <rect key="frame" x="133" y="0.0" width="39.5" height="25.5"/>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="--" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SUY-Zk-5Ex" userLabel="Title Label">
+                                                                            <rect key="frame" x="143.5" y="0.0" width="18.5" height="25.5"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                                                             <nil key="textColor"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
-                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tsc-UT-xdV" userLabel="Description Label">
-                                                                            <rect key="frame" x="109" y="29.5" width="87.5" height="20.5"/>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="--" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tsc-UT-xdV" userLabel="Description Label">
+                                                                            <rect key="frame" x="145" y="29.5" width="15.5" height="20.5"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                             <nil key="textColor"/>
                                                                             <nil key="highlightedColor"/>
@@ -247,7 +248,7 @@
                                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wind Speed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TKZ-zp-h4T" userLabel="Speed Label">
                                                                                             <rect key="frame" x="0.0" y="0.0" width="112.5" height="20.5"/>
                                                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                                            <color key="textColor" systemColor="systemYellowColor"/>
+                                                                                            <color key="textColor" systemColor="systemGreenColor"/>
                                                                                             <nil key="highlightedColor"/>
                                                                                         </label>
                                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ECH-Ld-han" userLabel="Value Label">
@@ -264,7 +265,7 @@
                                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Deg" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XWq-m2-0Sn" userLabel="Deg Label">
                                                                                             <rect key="frame" x="0.0" y="0.0" width="112.5" height="20.5"/>
                                                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                                            <color key="textColor" systemColor="systemYellowColor"/>
+                                                                                            <color key="textColor" systemColor="systemGreenColor"/>
                                                                                             <nil key="highlightedColor"/>
                                                                                         </label>
                                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EdS-Dw-hHT" userLabel="Value Label">
@@ -298,10 +299,16 @@
                                                     <connections>
                                                         <outlet property="cloudsHumidityLabel" destination="jhF-iM-yfE" id="j8C-SN-l3Z"/>
                                                         <outlet property="cloudsVisibilityLabel" destination="QsV-ay-cd8" id="sOA-kP-egn"/>
+                                                        <outlet property="degLabel" destination="XWq-m2-0Sn" id="ZNu-Da-XK7"/>
                                                         <outlet property="descriptionLabel" destination="Tsc-UT-xdV" id="a7x-kd-GMB"/>
+                                                        <outlet property="feelsLikeLabel" destination="yuz-m2-WfQ" id="7N2-ty-raL"/>
+                                                        <outlet property="humidityLabel" destination="Hf1-BC-Bis" id="bVO-q6-m1s"/>
+                                                        <outlet property="speedLabel" destination="TKZ-zp-h4T" id="EiT-ui-Bid"/>
                                                         <outlet property="tempActualLabel" destination="qf7-Ct-q5P" id="woQ-hn-jGW"/>
                                                         <outlet property="tempFeelsLikeLabel" destination="Ujt-uj-BgS" id="HOa-qE-pmI"/>
+                                                        <outlet property="temperatureLabel" destination="zh2-kK-WT7" id="IlR-xM-RWr"/>
                                                         <outlet property="titleLabel" destination="SUY-Zk-5Ex" id="dbu-Q7-ZhI"/>
+                                                        <outlet property="visibilityLabel" destination="n6k-1q-H16" id="tdD-0K-7W9"/>
                                                         <outlet property="windDegLabel" destination="EdS-Dw-hHT" id="wBN-AY-hnT"/>
                                                         <outlet property="windSpeedLabel" destination="ECH-Ld-han" id="xmE-wV-CAJ"/>
                                                     </connections>
@@ -313,6 +320,7 @@
                                                 <constraint firstItem="3bn-yB-VtB" firstAttribute="leading" secondItem="x3U-ce-2aW" secondAttribute="leading" constant="25" id="n6q-XR-eMl"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -322,7 +330,7 @@
                             <outlet property="delegate" destination="a57-nd-jdE" id="X7c-CK-g8t"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Observation" id="EMA-jY-NxN">
+                    <navigationItem key="navigationItem" title="Forecast" id="EMA-jY-NxN">
                         <barButtonItem key="rightBarButtonItem" enabled="NO" title="Save" id="Emg-DM-DKU">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
@@ -354,11 +362,11 @@
         <systemColor name="systemGray6Color">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemYellowColor">
-            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

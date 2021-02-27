@@ -80,6 +80,7 @@ final class ListViewController: UITableViewController {
     }
     
     private func configure() {
+        title = R.string.localizable.listTitle()
         searchCompleter.resultTypes = .address
         searchCompleter.delegate = self
     }

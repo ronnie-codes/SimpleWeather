@@ -8,6 +8,18 @@
 import UIKit
 
 final class DetailView: UIView {
+    
+    // MARK: Title labels (outlets created for localization)
+    
+    @IBOutlet weak private var temperatureLabel: UILabel!
+    @IBOutlet weak private var feelsLikeLabel: UILabel!
+    @IBOutlet weak private var visibilityLabel: UILabel!
+    @IBOutlet weak private var humidityLabel: UILabel!
+    @IBOutlet weak private var speedLabel: UILabel!
+    @IBOutlet weak private var degLabel: UILabel!
+    
+    // MARK: Value labels
+    
     @IBOutlet weak private var titleLabel: UILabel!
     @IBOutlet weak private var descriptionLabel: UILabel!
     @IBOutlet weak private var tempActualLabel: UILabel!
@@ -19,6 +31,22 @@ final class DetailView: UIView {
     
     lazy private var unitFormatter = Formatter.unit()
     lazy private var percentFormatter = Formatter.percent()
+    
+    // MARK: Methods
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        localize()
+    }
+    
+    private func localize() {
+        temperatureLabel.text = R.string.localizable.detailTemperature()
+        feelsLikeLabel.text = R.string.localizable.detailFeelsLike()
+        visibilityLabel.text = R.string.localizable.detailVisibility()
+        humidityLabel.text = R.string.localizable.detailHumidity()
+        speedLabel.text = R.string.localizable.detailSpeed()
+        degLabel.text = R.string.localizable.detailDeg()
+    }
     
     func configure(for city: CityDetailsQuery.Data.GetCityByName) {
         titleLabel.text = city.name
@@ -40,7 +68,7 @@ final class DetailView: UIView {
             }
             if let clouds = weather.clouds {
                 if let visibility = clouds.visibility {
-                    let localizedMeasurement = Measurement<UnitLength>(value: Double(visibility), unit: .kilometers)
+                    let localizedMeasurement = Measurement<UnitLength>(value: Double(visibility), unit: .meters)
                     cloudsVisibilityLabel.text = unitFormatter.string(for: localizedMeasurement)
                 }
                 if let humidity = clouds.humidity {

@@ -18,7 +18,7 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     private func setupAppearanceProxies() {
-        UINavigationBar.appearance().tintColor = .white
+        UINavigationBar.appearance().tintColor = UIColor.label
     }
 
     // MARK: UISceneSession Lifecycle
