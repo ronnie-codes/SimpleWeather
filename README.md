@@ -29,7 +29,9 @@ Additionally, what might be worth doing is encrypting the SQLite database which 
 
 What I did manage to accomplish on the security side, though minor but also improves performance as a side effect, 
 is building the project's pods as static libraries. This locks function implementations at compile time preventing any data 
-from being intercepted or functionality from being swapped out from the intended library at runtime.
+from being intercepted or functionality from being swapped out from the intended library at runtime (method swizzling).
+
+https://way2security4u.blogspot.com/2013/08/ios-application-security-part-8-method.html
 
 ### Responsive Design
 ...
