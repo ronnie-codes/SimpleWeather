@@ -29,12 +29,14 @@ Additionally, what might be worth doing is encrypting the SQLite database which 
 
 What I did manage to accomplish on the security side, though minor but also improves performance as a side effect, 
 is building the project's pods as static libraries. This locks function implementations at compile time preventing any data 
-from being intercepted or functionality from being swapped out from the intended library at runtime (method swizzling).
+from being intercepted or functionality from being swapped out at runtime (method swizzling).
 
 https://way2security4u.blogspot.com/2013/08/ios-application-security-part-8-method.html
 
-### Responsive Design
-...
+### Responsive Design (UI)
+Layout is responsive to all device sizes. Appearance is responsive to both dark and light modes. Units of measurement are responsive to locale. Depending on the region you'll see either metric or imperial units and their appropriate formats. None of this is hard coded either. System formatters are leveraged for this localization. The infrastructure for language localization has also been set.
+
+I've built apps that support every iPhone and iPad in every orientation and in every country and time zone in the world and all the best practices and standard conventions were employed to get this app going in that direction.
 
 ### Performance
-...
+Building our pods as static libraries is worth mentioning as a performance boost to the runtime. There are also some imperfections / inefficiences in the app that are worth mentioning. The entire set of saved locations is being read into memory and written back to disk for every operation. It would be more optimal to work with a single location at a time but right now all locations are tied to the same key in UserDefaults. See DataManager.swift.
