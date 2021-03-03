@@ -14,6 +14,7 @@ extension Formatter {
         formatter.numberFormatter.maximumFractionDigits = 1
         return formatter
     }
+
     static func percent() -> NumberFormatter {
         let formatter = NumberFormatter()
         formatter.numberStyle = .percent

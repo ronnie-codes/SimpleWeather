@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		070C7882133F69C5E690FC31 /* libPods-SimpleWeather.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B50125AFC2AFCFB56B36B16 /* libPods-SimpleWeather.a */; };
 		2093E02025E593B100E1815C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2093E01F25E593B100E1815C /* AppDelegate.swift */; };
 		2093E02225E593B100E1815C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2093E02125E593B100E1815C /* SceneDelegate.swift */; };
 		2093E02425E593B100E1815C /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2093E02325E593B100E1815C /* ListViewController.swift */; };
@@ -26,6 +25,7 @@
 		20A7C7A225E741A200221E19 /* Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A7C7A125E741A200221E19 /* Formatter.swift */; };
 		20A7C7B925E8731C00221E19 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A7C7B825E8731C00221E19 /* DataManager.swift */; };
 		20A7C81525E8D86200221E19 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A7C81425E8D86200221E19 /* R.generated.swift */; };
+		2117B8BF81ADEF130D821287 /* libPods-SimpleWeather.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B34312461E019D81AE80BA9 /* libPods-SimpleWeather.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,7 +50,7 @@
 		20A7C7A125E741A200221E19 /* Formatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formatter.swift; sourceTree = "<group>"; };
 		20A7C7B825E8731C00221E19 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		20A7C81425E8D86200221E19 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
-		5B50125AFC2AFCFB56B36B16 /* libPods-SimpleWeather.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SimpleWeather.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B34312461E019D81AE80BA9 /* libPods-SimpleWeather.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SimpleWeather.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		993BDDA50CE42C4AAC681911 /* Pods-SimpleWeather.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleWeather.release.xcconfig"; path = "Target Support Files/Pods-SimpleWeather/Pods-SimpleWeather.release.xcconfig"; sourceTree = "<group>"; };
 		9EB90EEA6EF919E2CAF844FB /* Pods-SimpleWeather.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleWeather.debug.xcconfig"; path = "Target Support Files/Pods-SimpleWeather/Pods-SimpleWeather.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -60,7 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				070C7882133F69C5E690FC31 /* libPods-SimpleWeather.a in Frameworks */,
+				2117B8BF81ADEF130D821287 /* libPods-SimpleWeather.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,7 +115,7 @@
 		9F0973CC257EAA8FBEDA81AA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				5B50125AFC2AFCFB56B36B16 /* libPods-SimpleWeather.a */,
+				5B34312461E019D81AE80BA9 /* libPods-SimpleWeather.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -232,7 +232,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$SRCROOT/R.generated.swift",
+				$SRCROOT/R.generated.swift,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
