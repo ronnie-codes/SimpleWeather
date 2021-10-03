@@ -49,6 +49,7 @@ playground.xcworkspace
 # .swiftpm
 
 .build/
+R.generated.swift
 
 # CocoaPods
 #
