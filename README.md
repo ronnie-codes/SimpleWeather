@@ -1,4 +1,7 @@
 # SimpleWeather iOS
+
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/a96a73a6bb4443068276a377782b8213)](https://app.codacy.com/gh/ronnie-codes/SimpleWeather?utm_source=github.com&utm_medium=referral&utm_content=ronnie-codes/SimpleWeather&utm_campaign=Badge_Grade_Settings)
+
 A simple weather application built from the ground up with the following primary functions:
 - View list of saved cities (with current weather for each)
 - Ability to add / remove a city from the list
